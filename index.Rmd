@@ -1,0 +1,376 @@
+---
+title: "Can voters hold governments accountable <br> for past performance?"
+author: "Austin Hart"
+institute: "American University"
+date: ahart@american.edu
+output:
+  xaringan::moon_reader:    
+    css: ["default", "assets/sydney-fonts.css", "assets/sydney.css"]
+    self-contained: false
+    seal: true
+    includes:
+      in_header: "assets/mathjax-equation-numbers.html"   
+    nature:
+      beforeInit: ["assets/remark-zoom.js"]
+      highlightStyle: github
+      highlightLines: true
+      highlightLanguage: ["r"]
+      countIncrementalSlides: false      
+      ratio: "16:9"                      
+---
+
+```{r setup, include=FALSE}
+  options(htmltools.dir.version = FALSE)
+  knitr::opts_chunk$set(
+    message=F, 
+    warning=F, 
+    eval=T, 
+    echo=F, 
+    fig.align='center', 
+    dev='svglite', 
+    dpi = 400
+  )
+  
+  library(tidyverse)
+  library(knitr)
+```
+
+
+
+# Research and Acknowledgements 
+  
+
+.pull-left-narrow[
+  .center[<img src="figures/qcontrol.png" width="120">]
+]
+
+.pull-right-wide[
+Research presented here published in:  
+
+- *Quality Control* (2023), Cambridge University Press
+
+- "Unmasking Competence" (2022) *Journal of Politics*
+]
+
+
+
+.pull-left-narrow[
+  .center[<img src="figures/hart.jpeg" width="90"> ]
+]
+
+.pull-right-wide[
+  **Austin Hart**, ahart@american.edu  
+  Associate Prof of Politics, Governance, and Economics  
+  American University
+]
+
+.pull-left-narrow[
+  .center[<img src="figures/scott.jpg" width="90"> ]
+]
+
+.pull-right-wide[
+  **J. Scott Matthews**, scott.matthews@mun.ca  
+  Professor of Political Science  
+  Memorial University
+]
+
+---
+# Summary of contributions
+
+.pull-left[
+### Integration/Appraisal framework
+- Theoretical & empirical lens for studying retrospective voting
+- 11 experiments allowing I/A to unfold  
+- Findings:  
+  - Quite capable I/A  
+  - Benchmark processing
+]
+
+.pull-right[
+### Case for 'synthetic' experiments
+- Rethinking realism and external validity
+- Impact\-estimating vs Theory\-testing
+- Criteria for external validity for experiments that test theory
+]
+
+---
+# Retrospective voting (RV)
+
+> Voters hold govts accountable for their performance in office.
+> They reward good outcomes and sanction poor outcomes. (Fiorina 1981)
+
+- Widespread evidence of RV  
+  - Ubiquitous if variable (Healy & Malhotra 2009)
+  - Causal arrow from attitude to vote (e.g., Lenz 2012, Hart & Middleton 2015)  
+  
+- Normative ambiguity (Achen & Bartels 2016)  
+  - Myopic judgments (Healy & Lenz 2014)
+  - Cannot parse competence from luck (Huber et al. 2012) 
+
+---
+# Unexplored microfoundations  
+### Can subjects differentiate competent from incompetent incumbents?  
+
+- Retrospective voting *requires*
+  - **Integration** over stream of performance info
+  - **Appraisal** of impression
+  
+- But I/A largely unseen
+  - Uncommon focus of theory
+  - Obs & Exp limitations
+
+
+---
+# Past experiments short-circuit I/A
+
+&nbsp;
+<blockquote>
+Experts say that not only have economic conditions deteriorated a lot over the last year, but the British economy is doing considerably worse that most other countries.
+.right[-- Tilly & Hobolt, 2011]
+</blockquote>
+
+- Vignette provides 
+  - pre\-integrated summary
+  - explicit appraisal cue  
+  
+- Have yet to study I/A in controlled setting
+
+
+---
+class: sydney-blue
+
+# Capacity and bias in I/A
+
+&nbsp;
+
+### Exp 1: Can voters identify competence in variable stream?
+### Exp 2: Preference for stable performers?
+### Exp 3: Over-punish negative outcomes?
+### Exp 4: Judging performance myopically?
+
+
+---
+# Experimental framework
+
+.pull-left-1[
+
+- Monitor new worker
+- Vote to reappoint/replace
+- Bonus $\propto$ factory output
+- Worker is fully\-trained but 
+  - Type unknown, <br> $\mu_{inc} \sim U(950,1450)$
+  - Output variable, <br> $Y_{inc,t} \sim N(\mu_{inc},250^2)$  
+  
+
+
+]
+
+.pull-right2[
+&nbsp; 
+.center[![](figures/sumGame.svg)]
+]
+
+---
+# Exp 1. Baseline performance vote
+
+### Given variable stream, can subjects identify competence? 
+
+.pull-left-1[
+- N = 248
+
+- Key design elements
+  - $\mu_{inc} \sim U(950,1450)$
+  - Output $Y_{inc,t} \sim N(\mu_{inc},250^2)$
+
+- Findings
+  - Subjects manage I/A
+  - Demonstrate rules comp
+  - Not 'blindly retro'
+]
+
+.pull-right-2[
+
+```{r fig3, out.width = '550px'}
+  knitr::include_graphics('figures/study1sum.svg')
+```
+]
+
+
+
+---
+class: segue-yellow
+
+# Confronting spillover in I/A
+
+
+
+---
+# Multiworker designs
+### Can voters differentiate competence from luck? 
+
+.pull-left-1[
+### Game Flow
+1. Comparator begins
+2. Monitor factory output, $F_{pre}$
+3. Incumbent arrives in week 9
+4. Monitor factory output, $F_{post}$
+5. Vote on reappointment
+]
+
+.pull-right-2[
+```{r multiflow, out.width = '550px'}
+  knitr::include_graphics('figures/multidesign.svg')
+```
+]
+
+
+---
+# Exp 5. Unmasking competence
+
+### Can subjects extract competencce from confounded stream? How?
+
+.pull-left-1[
+- N = 819  
+
+- Key design elements
+  - Randomize type\output
+  - Variance treatment $\sigma_{comp} \in (100,250)$
+  
+- Findings
+  - Capable signal extraction
+  - Benchmark processing
+]
+
+.pull-right-2[
+```{r study5, out.width = '550px'}
+  knitr::include_graphics('figures/study5sum.svg')
+```
+]
+
+
+
+---
+# Exp 8. Seeking performance cues
+
+### Do participants actively seek pre-benchmarked information? 
+
+.pull-left-1[
+- N = 720
+
+- Key design elements
+  - Two\-worker stream
+  - Randomize game type
+  - Offer choice of two reports
+  
+- Findings
+  - Benchmark seeking
+  - Esp in difficult task
+]
+
+.pull-right-2[
+```{r fig8, out.width = '550px'}
+  knitr::include_graphics('figures/study8sum.svg')
+```
+]
+
+---
+# Overview of experimental results
+
+- I/A over variable streams
+  - Capable judges of competence
+  - Clear strategy to confront spillover
+
+- Clear limitations
+  - Sub-optimal decisions
+  - Recency bias; maybe some negativity bias
+
+- Strategic, if sub-optimal, behavior
+  - Quick to benchmark
+  - Quick to seek out benchmarks
+
+
+
+---
+class: segue-yellow
+
+# External validity and experimental design
+
+
+---
+# Synthetic experiments and generalization
+
+&nbsp;
+
+> If we want to learn about political behavior, shouldn't our design be more *realistic*?
+
+&nbsp;
+
+.center[.large[No.]]
+
+
+
+---
+# Rethinking realism and generalization
+
+&nbsp;
+<blockquote>
+Whereas [randomized evaluations] generally have high mundane
+realism, some—but not all!—laboratory and survey experiments do not and thus provide a poor basis for external validity inferences
+.right[-- Findley et al. (2021)]
+</blockquote>
+
+
+- Realism/parallelism of experiment...
+  - cannot establish external validity
+  - may limit, rather than strictly enhance, external validity
+  
+- Study should mimic the target of generalization
+
+---
+# Intent and design
+
+&nbsp;
+
+|                       | Impact-estimating | Theory-testing    |
+|:----------------------|:------------------|:------------------|
+| Generalize to what?   | Impact/ATE        | Model             |
+| Nature of target      | Complex           | Minimalistic      |
+|                       | Context-bound     | "Universal"       |
+| Design to match       | Realistic         | Synthetic         | 
+|                       | Specific          | Abstract          |
+| Limitations           | Local             | Thin              |
+
+
+
+---
+# Criteria for external validity
+
+### in 'synthetic' experiments for testing theory
+
+- Setup
+  - Identify theory testing as central goal
+  - Ground generalization in theory
+  - Specify models & *a priori* propositions under study  
+
+- Design
+  - Exp "world" captures only essential essence of the models
+  - Creates space for contested behaviors to emerge
+  - Experimental realism
+
+
+---
+class: sydney-red
+
+# What does it mean?
+
+### Making sense of findings to date
+  
+- *Can* voters hold governments accountable? **YES**
+  - Capacity well beyond blind retrospection
+  - Strategic, imperfect benchmarking 
+
+- *Do* voters hold governments accountable? **...probably, sometimes...** 
+
+- Next steps  
+  - Appraise first, integrate later
+  - Locating negativity bias
