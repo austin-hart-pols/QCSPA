@@ -136,18 +136,6 @@ Experts say that not only have economic conditions deteriorated a lot over the l
 - Have yet to study I/A in controlled setting
 
 
----
-class: sydney-blue
-
-# Capacity and bias in I/A
-
-&nbsp;
-
-### Exp 1: Can voters identify competence in variable stream?
-### Exp 2: Preference for stable performers?
-### Exp 3: Over-punish negative outcomes?
-### Exp 4: Judging performance myopically?
-
 
 ---
 # Experimental framework
@@ -169,6 +157,21 @@ class: sydney-blue
 &nbsp; 
 .center[![](figures/sumGame.svg)]
 ]
+
+
+---
+class: sydney-blue
+
+# Capacity and bias in I/A
+
+&nbsp;
+
+### Exp 1: Can voters identify competence in variable stream?
+### Exp 2: Preference for stable performers?
+### Exp 3: Over-punish negative outcomes?
+### Exp 4: Judging performance myopically?
+
+
 
 ---
 # Exp 1. Baseline performance vote
@@ -198,11 +201,31 @@ class: sydney-blue
 
 
 ---
-class: segue-yellow
+class: sydney-blue
 
 # Confronting spillover in I/A
 
+&nbsp;
 
+### Exp 5: Extract competence from confounded stream?
+### Exp 6: Recognize relevant (ignore irrelevant) info?
+### Exp 7: Complex confounding
+
+
+---
+# Strategies for managing spillover
+
+- Blind retrospection (Achen & Bartels 2016)  
+  - No accounting for spillover
+  - RV as myopic, indiscriminant displacement
+
+- Rational discounting (Duch & Stevenson 2008) 
+  - Voters discount by variance of spillover
+  - RV as sophisticated signal extraction
+  
+- Benchmark comparison (Kayser & Peress 2012)  
+  - Competence in relative performance gap
+  - RV as low-info "social comparison" 
 
 ---
 # Multiworker designs
@@ -248,50 +271,31 @@ class: segue-yellow
 ]
 
 
-
 ---
-# Exp 8. Seeking performance cues
+# Consistent benchmark response
 
-### Do participants actively seek pre-benchmarked information? 
+&nbsp;
 
-.pull-left-1[
-- N = 720
+$$logit(Reappoint_i = 1) = \alpha F_{pre,i} + \beta F_{post,i} + \theta + u_i$$
 
-- Key design elements
-  - Two\-worker stream
-  - Randomize game type
-  - Offer choice of two reports
-  
-- Findings
-  - Benchmark seeking
-  - Esp in difficult task
-]
 
-.pull-right-2[
-```{r fig8, out.width = '550px'}
-  knitr::include_graphics('figures/study8sum.svg')
-```
-]
+### Estimates of I/A under interdependence
 
----
-# Overview of experimental results
-
-- I/A over variable streams
-  - Capable judges of competence
-  - Clear strategy to confront spillover
-
-- Clear limitations
-  - Sub-optimal decisions
-  - Recency bias; maybe some negativity bias
-
-- Strategic, if sub-optimal, behavior
-  - Quick to benchmark
-  - Quick to seek out benchmarks
+| Study |	Design (n)  | $\hat{\alpha}$ | $Pr(\alpha \geq 0)$  | $\hat{\beta}$ | $Pr(\beta \leq 0)$ |
+|-------|:------------|----------|--------|---------|---------|
+| 5	| Unmasking (849)       |	-0.59 |	< 0.001 |	0.86	| < 0.001 |
+| 6	| Recognition (368)     |	-1.12 |	< 0.001 |	1.56	| < 0.001 |
+| 7	| Unmasking (550)       |	-0.62 |	< 0.001	| 0.87	| < 0.001 |
+| 8	| Unmasking arm (473)   |	-0.49 |	< 0.001 |	0.68	| < 0.001 |
+|	  | Recognition arm (247) |	-0.47 |	< 0.001 |	1.03	| < 0.001 |
+| 9	| Unmasking arm (894)	  | -0.26 |	< 0.001	| 0.54	| < 0.001 |
+| 	| Recognition arm (482) |	-0.28 |	< 0.001 |	0.90	| < 0.001 |
+| 11 |	Dual stream (920)   |	-0.80 |	< 0.001	| 0.57	| < 0.001 |
 
 
 
 ---
-class: segue-yellow
+class: segue
 
 # External validity and experimental design
 
@@ -319,12 +323,15 @@ realism, some—but not all!—laboratory and survey experiments do not and thus
 .right[-- Findley et al. (2021)]
 </blockquote>
 
+- External validity beyond ATE (Egami & Hartman 2023)
+
+- Study should mimic the target of generalization  
 
 - Realism/parallelism of experiment...
   - cannot establish external validity
   - may limit, rather than strictly enhance, external validity
   
-- Study should mimic the target of generalization
+
 
 ---
 # Intent and design
@@ -334,7 +341,7 @@ realism, some—but not all!—laboratory and survey experiments do not and thus
 |                       | Impact-estimating | Theory-testing    |
 |:----------------------|:------------------|:------------------|
 | Generalize to what?   | Impact/ATE        | Model             |
-| Nature of target      | Complex           | Minimalistic      |
+| Nature of target      | Complex           | Minimalist        |
 |                       | Context-bound     | "Universal"       |
 | Design to match       | Realistic         | Synthetic         | 
 |                       | Specific          | Abstract          |
@@ -359,7 +366,7 @@ realism, some—but not all!—laboratory and survey experiments do not and thus
 
 
 ---
-class: sydney-red
+class: sydney-blue
 
 # What does it mean?
 
@@ -369,7 +376,9 @@ class: sydney-red
   - Capacity well beyond blind retrospection
   - Strategic, imperfect benchmarking 
 
-- *Do* voters hold governments accountable? **...probably, sometimes...** 
+- *Do* voters hold governments accountable? **maybe...**
+  - Update models to reflect capacity 
+  - Consider why it might/might not appear in practice
 
 - Next steps  
   - Appraise first, integrate later
