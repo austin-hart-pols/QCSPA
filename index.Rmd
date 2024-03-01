@@ -209,7 +209,11 @@ class: sydney-blue
 
 ### Exp 5: Extract competence from confounded stream?
 ### Exp 6: Recognize relevant (ignore irrelevant) info?
-### Exp 7: Complex confounding
+### Exp 7: Complex confounding  
+### Exp 8: Information search   
+### Exp 9: Information provision 
+### Exp 10: Quality benchmarks  
+### Exp 11: "Shocked" benchmarks
 
 
 ---
