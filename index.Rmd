@@ -22,12 +22,12 @@ output:
 ```{r setup, include=FALSE}
   options(htmltools.dir.version = FALSE)
   knitr::opts_chunk$set(
-    message=F, 
-    warning=F, 
-    eval=T, 
-    echo=F, 
-    fig.align='center', 
-    dev='svglite', 
+    message = F, 
+    warning = F, 
+    eval = T, 
+    echo = F, 
+    fig.align = 'center', 
+    dev = 'svglite', 
     dpi = 400
   )
   
@@ -148,8 +148,6 @@ Experts say that not only have economic conditions deteriorated a lot over the l
 - Worker is fully\-trained but 
   - Type unknown, <br> $\mu_{inc} \sim U(950,1450)$
   - Output variable, <br> $Y_{inc,t} \sim N(\mu_{inc},250^2)$  
-  
-
 
 ]
 
@@ -275,13 +273,11 @@ class: sydney-blue
 
 ---
 # Consistent benchmark response
-
-&nbsp;
+### Estimates of I/A under interdependence
 
 $$logit(Reappoint_i = 1) = \alpha F_{pre,i} + \beta F_{post,i} + \theta + u_i$$
 
 
-### Estimates of I/A under interdependence
 
 | Study |	Design (n)  | $\hat{\alpha}$ | $Pr(\alpha \geq 0)$  | $\hat{\beta}$ | $Pr(\beta \leq 0)$ |
 |-------|:------------|----------|--------|---------|---------|
